@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { Component, ViewChild, Params, OnsNavigator, OnsenModule  } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { StartPaginaComponent } from './start-pagina/start-pagina.component';
+import { AccountPaginaComponent } from './account-pagina/account-pagina.component';
+import { GeschiedenisPaginaComponent } from './geschiedenis-pagina/geschiedenis-pagina.component';
+import { WedstrijdPaginaComponent } from './wedstrijd-pagina/wedstrijd-pagina.component';
 
 
 
@@ -13,10 +16,16 @@ import { StartPaginaComponent } from './start-pagina/start-pagina.component';
   declarations: [
     AppComponent,
     StartPaginaComponent,
+    AccountPaginaComponent,
+    GeschiedenisPaginaComponent,
+    WedstrijdPaginaComponent,
  
   ],
   entryComponents: [
-    StartPaginaComponent
+    StartPaginaComponent,
+    AccountPaginaComponent,
+    GeschiedenisPaginaComponent,
+    WedstrijdPaginaComponent
   ],
   imports: [
      OnsenModule,
