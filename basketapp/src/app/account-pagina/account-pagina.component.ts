@@ -17,7 +17,10 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
       </div>
     </ons-toolbar>
     <div class="content">
-     Account pagina
+      <div><ons-input placeholder="Type Username" [(value)]="Username"></ons-input></div>
+
+      <div><ons-input placeholder="Type email" [(value)]="Email"></ons-input></div>
+      <div><ons-input placeholder="Type password" [(value)]="Password"></ons-input></div>
     </div>
   </ons-page>
           `
@@ -31,4 +34,9 @@ constructor(private navigator: OnsNavigator){
 Pop(){
   this.navigator.element.popPage(StartPaginaComponent)
 }
+
+Username: string= '';
+Email: string= '';
+Password: string= '';
+
 }

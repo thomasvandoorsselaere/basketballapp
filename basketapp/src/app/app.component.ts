@@ -10,7 +10,7 @@ import { StartPaginaComponent } from './start-pagina/start-pagina.component';
   selector: 'app-root',
   template: `
     <ons-navigator [page]="initialPage"></ons-navigator>
-        `
+  `
 })
 
 export class AppComponent {

@@ -29,7 +29,8 @@ import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.c
   })
 
 export class StartPaginaComponent{
-title = 'Basketapp'
+  title = 'Basketapp'
+  
   constructor(private navigator: OnsNavigator){
 
   }
