@@ -4,6 +4,7 @@ import { ViewChild, Params, OnsNavigator, OnsenModule  } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import * as ons from 'onsenui';
 import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
+import { GeschiedenisdetailComponent } from '../geschiedenisdetail/geschiedenisdetail.component';
 
   @Component({
     selector: 'ons-page[fourth]',
@@ -16,7 +17,12 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
       </div>
     </ons-toolbar>
     <div class="content">
-     Geschiedenis pagina
+    <ons-list id="pending-list" class="list">
+    <ons-list-item tappable="" category="programming" class="list-item" style=""><label class="left list-item__left"><ons-checkbox class="checkbox">
+        <input type="checkbox" class="checkbox__input">
+        <span class="checkbox__checkmark"></span>
+      </ons-checkbox></label><div class="center list-item__center" (click)="wedstrijddetail()">Wedstrijd1</div><div class="right list-item__right"><ons-icon style="color: grey; padding-left: 4px" icon="ion-ios-trash-outline, material:md-delete" class="ons-icon ion-ios-trash-outline ons-icon--ion"></ons-icon></div></ons-list-item>
+      </ons-list>
     </div>
   </ons-page>
           `
@@ -29,4 +35,8 @@ constructor(private navigator: OnsNavigator){
 Pop(){
   this.navigator.element.popPage(StartPaginaComponent)
 }
+wedstrijddetail(){
+  this.navigator.element.pushPage(GeschiedenisdetailComponent)
+}
+
 }
