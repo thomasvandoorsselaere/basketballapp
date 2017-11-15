@@ -6,12 +6,11 @@ import * as ons from 'onsenui';
 import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
 
   @Component({
-    selector: 'ons-page[third]',
+    selector: 'ons-page[fourth]',
     template: `
     <ons-page>
     <ons-toolbar>
       <div class="left"><ons-back-button (click)="Pop()">Back</ons-back-button></div>
-      <div class="center">{{title}}</div>
         <div class="right">
         <ons-toolbar-button (click)="logoutmessage()">Logout</ons-toolbar-button>
       </div>
@@ -24,7 +23,6 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
   })
 
 export class GeschiedenisPaginaComponent{
-title = 'Basketapp'
 constructor(private navigator: OnsNavigator){
   
     }

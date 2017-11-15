@@ -8,6 +8,8 @@ import { StartPaginaComponent } from './start-pagina/start-pagina.component';
 import { AccountPaginaComponent } from './account-pagina/account-pagina.component';
 import { GeschiedenisPaginaComponent } from './geschiedenis-pagina/geschiedenis-pagina.component';
 import { WedstrijdPaginaComponent } from './wedstrijd-pagina/wedstrijd-pagina.component';
+import { LoginschermComponent } from './loginscherm/loginscherm.component';
+import { RegistratieschermComponent } from './registratiescherm/registratiescherm.component';
 
 
 
@@ -19,13 +21,17 @@ import { WedstrijdPaginaComponent } from './wedstrijd-pagina/wedstrijd-pagina.co
     AccountPaginaComponent,
     GeschiedenisPaginaComponent,
     WedstrijdPaginaComponent,
+    LoginschermComponent,
+    RegistratieschermComponent,
  
   ],
   entryComponents: [
     StartPaginaComponent,
     AccountPaginaComponent,
     GeschiedenisPaginaComponent,
-    WedstrijdPaginaComponent
+    WedstrijdPaginaComponent,
+    LoginschermComponent,
+    RegistratieschermComponent
   ],
   imports: [
      OnsenModule,

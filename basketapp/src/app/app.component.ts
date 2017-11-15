@@ -3,6 +3,7 @@ import {OnsenModule, NgModule, CUSTOM_ELEMENTS_SCHEMA, OnsNavigator} from 'ngx-o
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import * as ons from 'onsenui';
 import { StartPaginaComponent } from './start-pagina/start-pagina.component';
+import { LoginschermComponent } from './loginscherm/loginscherm.component';
 
 
 
@@ -14,6 +15,6 @@ import { StartPaginaComponent } from './start-pagina/start-pagina.component';
 })
 
 export class AppComponent {
-  initialPage = StartPaginaComponent;
+  initialPage = LoginschermComponent;
 
 }

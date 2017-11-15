@@ -6,15 +6,15 @@ import * as ons from 'onsenui';
 import { AccountPaginaComponent } from '../account-pagina/account-pagina.component';
 import { GeschiedenisPaginaComponent } from '../geschiedenis-pagina/geschiedenis-pagina.component';
 import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.component';
+import { LoginschermComponent } from '../loginscherm/loginscherm.component';
 
   @Component({
-    selector: 'ons-page[first]',
+    selector: 'ons-page[second]',
     template: `
     <ons-page>
     <ons-toolbar>
-      <div class="center">{{title}}</div>
         <div class="right">
-        <ons-toolbar-button (click)="logoutmessage()">Logout</ons-toolbar-button>
+        <ons-toolbar-button (click)="logoutmethode()">Logout</ons-toolbar-button>
       </div>
     </ons-toolbar>
     <div class="content">
@@ -29,7 +29,6 @@ import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.c
   })
 
 export class StartPaginaComponent{
-  title = 'Basketapp'
   
   constructor(private navigator: OnsNavigator){
 
@@ -44,6 +43,10 @@ export class StartPaginaComponent{
 
   pushWedstrijd() {
     this.navigator.element.pushPage(WedstrijdPaginaComponent)
+  }
+
+  logoutmethode(){
+    this.navigator.element.popPage(LoginschermComponent)
   }
 }
 
