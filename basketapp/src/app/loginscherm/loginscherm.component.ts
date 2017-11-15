@@ -12,17 +12,15 @@ import { RegistratieschermComponent } from '../registratiescherm/registratiesche
 <ons-page>
 
   <div class="login-form">
-
-    <div class="center">
-      <input type="email" class="text-input--underbar" placeholder="Username" value="">
-    </div>
-    <div class="center">
+    
+      <input modifier="material--flat" type="username" class="text-input--underbar" placeholder="Username" value="">
+      <br><br>
       <input type="password" class="text-input--underbar" placeholder="Password" value="">
-    </div>
+    
     <br><br>
     <ons-button modifier="large" class="login-button" (click)="loginmethode()">Log In</ons-button>
-
-    <ons-button modifier="quiet" class="forgot-password" (click)="registreermethode()">Register</ons-button>
+    <br><br>
+    <ons-button modifier="large--quiet" class="register" (click)="registreermethode()">Register</ons-button>
   </div>
 
 </ons-page>
