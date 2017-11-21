@@ -16,7 +16,26 @@ import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.c
     </div>
   </ons-toolbar>
   <div class="content">
-   Wedstrijd opties
+  <ons-list>
+    <ons-list-item >Punten    
+      <ons-switch [(value)]="punten"></ons-switch>
+    </ons-list-item>
+    <ons-list-item >rebounds    
+      <ons-switch [(value)]="rebounds"></ons-switch>
+    </ons-list-item>
+    <ons-list-item >assists    
+      <ons-switch [(value)]="assists"></ons-switch>
+    </ons-list-item>
+    <ons-list-item >steals    
+      <ons-switch [(value)]="steals"></ons-switch>
+    </ons-list-item>
+    <ons-list-item >blocks    
+      <ons-switch [(value)]="blocks"></ons-switch>
+    </ons-list-item>
+    <ons-list-item >turnovers    
+      <ons-switch [(value)]="turnovers"></ons-switch>
+    </ons-list-item>
+  </ons-list>
   </div>
 </ons-page>
         `
