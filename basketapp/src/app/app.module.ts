@@ -11,6 +11,7 @@ import { WedstrijdPaginaComponent } from './wedstrijd-pagina/wedstrijd-pagina.co
 import { LoginschermComponent } from './loginscherm/loginscherm.component';
 import { RegistratieschermComponent } from './registratiescherm/registratiescherm.component';
 import { GeschiedenisdetailComponent } from './geschiedenisdetail/geschiedenisdetail.component';
+import { WedstrijdOptiesComponent } from './wedstrijd-opties/wedstrijd-opties.component';
 
 
 
@@ -25,6 +26,7 @@ import { GeschiedenisdetailComponent } from './geschiedenisdetail/geschiedenisde
     LoginschermComponent,
     RegistratieschermComponent,
     GeschiedenisdetailComponent,
+    WedstrijdOptiesComponent,
  
   ],
   entryComponents: [
@@ -34,7 +36,8 @@ import { GeschiedenisdetailComponent } from './geschiedenisdetail/geschiedenisde
     WedstrijdPaginaComponent,
     LoginschermComponent,
     RegistratieschermComponent,
-    GeschiedenisdetailComponent
+    GeschiedenisdetailComponent,
+    WedstrijdOptiesComponent
   ],
   imports: [
      OnsenModule,

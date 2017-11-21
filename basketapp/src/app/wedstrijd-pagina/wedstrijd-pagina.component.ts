@@ -4,6 +4,7 @@ import { ViewChild, Params, OnsNavigator, OnsenModule  } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import * as ons from 'onsenui';
 import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
+import { WedstrijdOptiesComponent } from '../wedstrijd-opties/wedstrijd-opties.component';
 
   @Component({
     selector: 'ons-page[fifth]',
@@ -16,7 +17,13 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
       </div>
     </ons-toolbar>
     <div class="content">
-     Wedstrijd pagina
+      <div style="text-align: center; margin: 10px;">
+        <ons-list>
+          <ons-list-item modifier="chevron" tappable (click)="wedstrijdopties()">Wedstrijd opties</ons-list-item>
+          <ons-list-item modifier="chevron" tappable (click)="pushGeschiedenis()">Spelers</ons-list-item>
+        </ons-list>
+          <ons-button (click)="startwedstrijd()">Start wedstrijd</ons-button>
+      </div>
     </div>
   </ons-page>
           `
@@ -26,8 +33,8 @@ export class WedstrijdPaginaComponent{
 constructor(private navigator: OnsNavigator){
   
     }
-Pop(){
-  this.navigator.element.popPage(StartPaginaComponent)
+    wedstrijdopties(){
+  this.navigator.element.pushPage(WedstrijdOptiesComponent)
 }
 }
 
