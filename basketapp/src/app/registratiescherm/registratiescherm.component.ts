@@ -7,7 +7,7 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
 import { LoginschermComponent } from '../loginscherm/loginscherm.component';
 
 @Component({
-  selector: 'ons-page[seventh]',
+  selector: 'ons-page[sixth]',
   template: `
   <ons-page>
   <ons-toolbar>

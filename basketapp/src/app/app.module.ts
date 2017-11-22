@@ -12,6 +12,9 @@ import { LoginschermComponent } from './loginscherm/loginscherm.component';
 import { RegistratieschermComponent } from './registratiescherm/registratiescherm.component';
 import { GeschiedenisdetailComponent } from './geschiedenisdetail/geschiedenisdetail.component';
 import { WedstrijdOptiesComponent } from './wedstrijd-opties/wedstrijd-opties.component';
+import { WedstrijdSpelersComponent } from './wedstrijd-spelers/wedstrijd-spelers.component';
+import { TeamsComponent } from './teams/teams.component';
+import { TeamspelersComponent } from './teamspelers/teamspelers.component';
 
 
 
@@ -27,6 +30,9 @@ import { WedstrijdOptiesComponent } from './wedstrijd-opties/wedstrijd-opties.co
     RegistratieschermComponent,
     GeschiedenisdetailComponent,
     WedstrijdOptiesComponent,
+    WedstrijdSpelersComponent,
+    TeamsComponent,
+    TeamspelersComponent,
  
   ],
   entryComponents: [
@@ -37,7 +43,10 @@ import { WedstrijdOptiesComponent } from './wedstrijd-opties/wedstrijd-opties.co
     LoginschermComponent,
     RegistratieschermComponent,
     GeschiedenisdetailComponent,
-    WedstrijdOptiesComponent
+    WedstrijdOptiesComponent,
+    WedstrijdSpelersComponent,
+    TeamsComponent,
+    TeamspelersComponent
   ],
   imports: [
      OnsenModule,

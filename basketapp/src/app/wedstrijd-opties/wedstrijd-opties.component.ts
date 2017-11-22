@@ -6,7 +6,7 @@ import * as ons from 'onsenui';
 import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.component';
 
 @Component({
-  selector: 'ons-page[ninth]',
+  selector: 'ons-page[eight]',
   template: `
   <ons-page>
   <ons-toolbar>

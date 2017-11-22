@@ -7,7 +7,7 @@ import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
 import { GeschiedenisPaginaComponent } from '../geschiedenis-pagina/geschiedenis-pagina.component';
 
   @Component({
-    selector: 'ons-page[eight]',
+    selector: 'ons-page[seventh]',
     template: `
     <ons-page>
     <ons-toolbar>
