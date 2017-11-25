@@ -17,24 +17,12 @@ import { WedstrijdPaginaComponent } from '../wedstrijd-pagina/wedstrijd-pagina.c
   </ons-toolbar>
   <div class="content">
   <ons-list>
-    <ons-list-item >Punten    
-      <ons-switch [(value)]="punten"></ons-switch>
-    </ons-list-item>
-    <ons-list-item >rebounds    
-      <ons-switch [(value)]="rebounds"></ons-switch>
-    </ons-list-item>
-    <ons-list-item >assists    
-      <ons-switch [(value)]="assists"></ons-switch>
-    </ons-list-item>
-    <ons-list-item >steals    
-      <ons-switch [(value)]="steals"></ons-switch>
-    </ons-list-item>
-    <ons-list-item >blocks    
-      <ons-switch [(value)]="blocks"></ons-switch>
-    </ons-list-item>
-    <ons-list-item >turnovers    
-      <ons-switch [(value)]="turnovers"></ons-switch>
-    </ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Punten</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Rebounds</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Assists</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Steals</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Blocks</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
+    <ons-list-item modifier="nodivider"><label class="center" for="inner-highlight-input">Turnovers</label><div class="right"><ons-switch id="highlight-input" input-id="inner-highlight-input"></ons-switch></div></ons-list-item>
   </ons-list>
   </div>
 </ons-page>

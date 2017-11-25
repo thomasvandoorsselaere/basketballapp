@@ -5,6 +5,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import * as ons from 'onsenui';
 import { StartPaginaComponent } from '../start-pagina/start-pagina.component';
 import { WedstrijdOptiesComponent } from '../wedstrijd-opties/wedstrijd-opties.component';
+import { WedstrijdSpelersComponent } from '../wedstrijd-spelers/wedstrijd-spelers.component';
 
   @Component({
     selector: 'ons-page[fifth]',
@@ -20,7 +21,7 @@ import { WedstrijdOptiesComponent } from '../wedstrijd-opties/wedstrijd-opties.c
       <div style="text-align: center; margin: 10px;">
         <ons-list>
           <ons-list-item modifier="chevron" tappable (click)="wedstrijdopties()">Wedstrijd opties</ons-list-item>
-          <ons-list-item modifier="chevron" tappable (click)="pushGeschiedenis()">Spelers</ons-list-item>
+          <ons-list-item modifier="chevron" tappable (click)="wedstrijdspelers()">Spelers</ons-list-item>
         </ons-list>
           <ons-button (click)="startwedstrijd()">Start wedstrijd</ons-button>
       </div>
@@ -35,6 +36,10 @@ constructor(private navigator: OnsNavigator){
     }
     wedstrijdopties(){
   this.navigator.element.pushPage(WedstrijdOptiesComponent)
+}
+
+    wedstrijdspelers(){
+  this.navigator.element.pushPage(WedstrijdSpelersComponent)
 }
 }
 

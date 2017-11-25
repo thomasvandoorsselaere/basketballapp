@@ -18,9 +18,13 @@ import { TeamspelersComponent } from '../teamspelers/teamspelers.component';
     </ons-toolbar>
     <div class="content">
     <ons-list id="pending-list" class="list">
-    <ons-list-item tappable="" category="programming" class="list-item" style=""><div class="center list-item__center" (click)="teamDetail()">Team1</div><div class="right list-item__right"><ons-icon style="color: grey; padding-left: 4px" icon="ion-ios-trash-outline, material:md-delete" class="ons-icon ion-ios-trash-outline ons-icon--ion"></ons-icon></div></ons-list-item>
-      </ons-list>
+      <ons-list-item tappable="" category="programming" class="list-item" style=""><div class="center list-item__center" (click)="teamDetail()">Team1</div><div class="right list-item__right"><ons-icon style="color: grey; padding-left: 4px" icon="ion-ios-trash-outline, material:md-delete" class="ons-icon ion-ios-trash-outline ons-icon--ion"></ons-icon></div></ons-list-item>
+    </ons-list>
+     <div style="text-align: center; margin: 10px;">
+      <button class="fab fab--mini"><i class="zmdi zmdi-plus"></i></button>
+     </div>
     </div>
+   
   </ons-page>
           `
   })
